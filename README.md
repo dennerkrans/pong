@@ -1,6 +1,8 @@
-# Raylib Game Template
+# Raylib Pong
 
-A C++ game template using raylib.
+Pong built using C++ and raylib.
+
+![Screenshot](./screenshots/screenshot000.png);
 
 ## Requirements
 
