@@ -85,8 +85,7 @@ The executable will be created in `build/raylib-game-template/`.
 ```
 ├── src/               # Source files
 │   ├── resources/    # Game resources (images, sounds, etc.)
-│   ├── screens/      # Game screens (logo, title, gameplay, etc.)
-│   └── pong.cpp # Main game file
+│   └── main.cpp # Main game file
 ├── build/            # Build output directory
 └── .vscode/          # VSCode configuration
     ├── tasks.json    # Build tasks
