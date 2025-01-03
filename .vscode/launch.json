@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/pong",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": false
+        }
+      ],
+      "windows": {
+        "program": "${workspaceFolder}/build/pong.exe",
+        "miDebuggerPath": "gdb.exe"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "preLaunchTask": "build debug"
+    },
+    {
+      "name": "Release",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/pong",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "windows": {
+        "program": "${workspaceFolder}/build/pong.exe",
+        "miDebuggerPath": "gdb.exe"
+      },
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "preLaunchTask": "build release"
+    }
+  ]
+}
